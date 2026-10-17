@@ -9,7 +9,9 @@ Fingerprint: `6fb0f779`
 
 ## AI-use declaration
 
-(About half a page: which assistants or tools you used and for what. If you used none, say so.)
+I used Python to run the code and obtain the results from my dataset. I reviewed the outputs and checked the calculations to make sure they matched the required formulas. When I had difficulties understanding some concepts I used AI assistance to help clarify them. 
+
+I used Gemini to help check my Python code for processing the provided datasets and calculating the required metrics. I also used it to proofread my writing, correct grammar, and if needed make my explanations clearer to understand. The answers, reasoning, and final decisions in this submission are my own. 
 
 ## Part 1: Retrieval and cost decision
 

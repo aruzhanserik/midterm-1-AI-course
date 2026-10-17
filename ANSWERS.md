@@ -43,12 +43,15 @@ Fingerprint: `6fb0f779`
 Chosen candidate: (B, 3)
 
 Config A is out: (A,3) costs $17,282 and (A,5) $22,264, both over the $15,300 budget. 
-Two candidates fit: (B,3) at $11,933 and (B,5) at $13,349. Recall is 46.7 % [34.6–59.1] for (B,3) and 51.7 % [39.3–63.8] for (B,5). The intervals overlap, so (B,5) is not shown to be better, and paying $1,416 more per year for an unproven gain is unreasinable. Recall of (B,3): EN 40 % (8/20, [21.9–61.3]), RU 60 % (12/20, [38.7–78.1]), KK 40 % (8/20, [21.9–61.3]). 
-English and Kazakh users are served worst, but with 20 questions per language the intervals overlap, so no language is shown to differ. Overall, about half of the questions miss the right chunk at k=3.
+Two candidates fit: (B,3) at $11,933 and (B,5) at $13,349. 
+Recall is 46.7 % [34.6–59.1] for (B,3) and 51.7 % [39.3–63.8] for (B,5). The intervals overlap, so (B,5) is not shown to be better, and paying $1,416 more per year for an unproven gain is unreasinable. 
+Recall of (B,3): EN 40 % (8/20, [21.9–61.3]), RU 60 % (12/20, [38.7–78.1]), KK 40 % (8/20, [21.9–61.3]). 
+English and Kazakh users are served worst, but with 20 questions per language the intervals overlap, so no language is shown to differ. 
+Overall, about half of the questions miss the right chunk at k=3.
 
 
 ### 1e. Next measurement (at most 60 words)
-Re-measure recall@3 and recall@5 of config B on at least 300 real questions per language. If the (B,5) interval then lies above (B,3) the extra $1,416 a year is justified and switch will most likely happen, if not, (B,3) stays.
+Re-measure recall@3 and recall@5 of config B on at least 300 real questions per language. If the (B,5) interval then lies above (B,3) the extra $1,416 a year is justified and switch will most likely happen, if not then (B,3) will stay.
 
 ## Part 2: A document pipeline you can defend
 
@@ -67,7 +70,7 @@ My choice is pipeline L.
 **Who is served worst.** For both pipelines, the worst group is Kazakh scans in bad condition (degraded). Only 20 of 30 are correct, which is 66.7 %. The 95 % interval is 48.8 % to 80.8 %. The overall numbers (H 88.9 %, L 80.0 %) hide this problem, because the good groups make the average look better. About one in three bad Kazakh invoices fails. We tested only 30 invoices per group, so the interval is wide. I cannot say that H and L are really different in this group.
 
 **Personal data.** 21 % of the pages have a person's name and ИИН. Kazakhstan's law No. 94-V covers the ИИН. With H, 613200 pages a year would leave the country. Three questions:
-- Where does the scan go? H: to a data centre abroad (I know this). L: to our own server in Kazakhstan (I know this).
+- Where does the scan go? H: to a data centre abroad. L: to our own server in Kazakhstan.
 - Who stores it? H: the vendor, but I do not know the details, so I must ask for the contract. L: our bank.
 - For how long? H: I do not know the vendor's retention time, so I must find out. L: we decide.
 
@@ -79,7 +82,8 @@ A vendor saying "we are safe" is not a compliance check.
 - Block internet traffic going out from the server and test it.
 - Send bad Kazakh scans and low-confidence results to a person, and count how many each month.
 
-**My choice:** L costs $7,200 a year. H costs $59305. With L, no ИИН leaves the country. The price is 8.9 points lower overall accuracy. The risk that remains: L will make more mistakes, and they are only caught if the human check works. If our server is hacked, that is our problem.
+**My choice:** L costs $7200 a year. H costs $59305. With L, no ИИН leaves the country. The price is 8.9 points lower overall accuracy. 
+The risk that remains: L will make more mistakes, and they are only caught if the human check works. If our server is hacked, that is our problem.
 
 
 ## Part 3: Explain your own numbers

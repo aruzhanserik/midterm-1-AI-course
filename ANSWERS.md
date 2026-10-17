@@ -111,4 +111,4 @@ Why (at most 40 words): The leaderboard prefers X (74 vs 70), because it has mor
 ### Q5
 
 Number: 9945
-Why (at most 40 words):
+Why (at most 40 words): The first message is paid for 17 times by the last turn, once per turn. Prompt caching can make repeated tokens cheaper, even though the prompt is still used.

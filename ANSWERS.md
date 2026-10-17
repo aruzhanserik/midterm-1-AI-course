@@ -56,12 +56,13 @@ Re-measure recall@3 and recall@5 of config B on at least 300 real questions per 
 
 | pipeline | overall accuracy | weakest cell (language, condition) | accuracy there | lower | upper | annual cost |
 |---|---|---|---|---|---|---|
-| H | | | | | | |
-| L | | | | | | |
+| H |0.889 (160/180) |KK, degraded |0.667(20/30) |0.488 |0.808 |$59305 |
+| L |0.800 (144/180) |KK, degraded |0.667(20/30) |0.488 |0.808 |$7200 |
 
 Personal-data pages per year sent abroad under H:
 
 ### 2b. Memo (at most 300 words)
+
 
 ## Part 3: Explain your own numbers
 

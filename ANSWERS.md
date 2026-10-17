@@ -17,17 +17,17 @@ Fingerprint: `6fb0f779`
 
 | config | recall@1 | recall@3 | recall@5 | MRR@10 |
 |---|---|---|---|---|
-| A |0.45 |0.5 |0.583 |0.493 |
-| B |0.4 |0.467 |0.517 |0.457 |
+| A |0.450 |0.500 |0.583 |0.493 |
+| B |0.400 |0.467 |0.517 |0.457 |
 
 ### 1b. Recall and 95 % Wilson interval of each candidate (recall at its own k)
 
 | candidate | recall@k | lower | upper |
 |---|---|---|---|
-| A, k=3 | | | |
-| A, k=5 | | | |
-| B, k=3 | | | |
-| B, k=5 | | | |
+| A, k=3 |0.500 |0.377 |0.623 |
+| A, k=5 |0.583 |0.457 |0.699 |
+| B, k=3 |0.467 |0.346 |0.591 |
+| B, k=5 |0.517 |0.393 |0.638 |
 
 ### 1c. Annual model cost in USD
 

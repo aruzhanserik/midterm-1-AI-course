@@ -99,7 +99,8 @@ Why (at most 40 words): A 576-token chunk is about 592 e5 tokens, but e5 reads o
 ### Q3
 
 Number: 92.7
-Why (at most 40 words): 
+Why (at most 40 words): The ranking stays the same, softmax keeps the order. Low Temperature only makes the top token much more likely. Every token still has a probability above zero, so none is removed, only top-p or top-k would cut tokens.
+
 
 ### Q4
 

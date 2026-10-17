@@ -62,6 +62,24 @@ Re-measure recall@3 and recall@5 of config B on at least 300 real questions per 
 Personal-data pages per year sent abroad under H:
 
 ### 2b. Memo (at most 300 words)
+My choice is pipeline L.
+
+**Who is served worst.** For both pipelines, the worst group is Kazakh scans in bad condition (degraded). Only 20 of 30 are correct, which is 66.7 %. The 95 % interval is 48.8 % to 80.8 %. The overall numbers (H 88.9 %, L 80.0 %) hide this problem, because the good groups make the average look better. About one in three bad Kazakh invoices fails. We tested only 30 invoices per group, so the interval is wide. I cannot say that H and L are really different in this group.
+
+**Personal data.** 21 % of the pages have a person's name and ИИН. Kazakhstan's law No. 94-V covers the ИИН. With H, 613200 pages a year would leave the country. Three questions:
+- Where does the scan go? H: to a data centre abroad (I know this). L: to our own server in Kazakhstan (I know this).
+- Who stores it? H: the vendor, but I do not know the details, so I must ask for the contract. L: our bank.
+- For how long? H: I do not know the vendor's retention time, so I must find out. L: we decide.
+
+A vendor saying "we are safe" is not a compliance check.
+
+**Safeguards we can check.**
+- Delete scans and results from L after 30 days and keep a deletion log.
+- Keep a list of who can open the data, and review the access log every 3 months.
+- Block internet traffic going out from the server and test it.
+- Send bad Kazakh scans and low-confidence results to a person, and count how many each month.
+
+**My choice:** L costs $7,200 a year. H costs $59305. With L, no ИИН leaves the country. The price is 8.9 points lower overall accuracy. The risk that remains: L will make more mistakes, and they are only caught if the human check works. If our server is hacked, that is our problem.
 
 
 ## Part 3: Explain your own numbers

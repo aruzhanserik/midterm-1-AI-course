@@ -1,7 +1,7 @@
 # Midterm 1: answers
 
 GitHub username: `aruzhanserik`
-Session code: `maple-66`
+Session code: `MAPLE-66`
 Fingerprint: `6fb0f779`
 
 > Fill in the three lines above from `my_data/DATA.md`. Do not rename headings or table columns: a script reads the numbers.

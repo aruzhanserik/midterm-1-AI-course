@@ -53,7 +53,7 @@ Overall, about half of the questions miss the right chunk at k=3.
 
 
 ### 1e. Next measurement (at most 60 words)
-Re-measure recall@3 and recall@5 of config B on at least 300 real questions per language. If the (B,5) interval then lies above (B,3) the extra $1,416 a year is justified and switch will most likely happen, if not then (B,3) will stay.
+Re-measure recall@3 and recall@5 of config B on at least 300 real questions per language. If the (B,5) interval then lies above (B,3) the extra $1416 a year is justified and switch will most likely happen, if not then (B,3) will stay.
 
 ## Part 2: A document pipeline you can defend
 

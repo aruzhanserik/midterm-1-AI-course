@@ -105,7 +105,8 @@ Why (at most 40 words): The ranking stays the same, softmax keeps the order. Low
 ### Q4
 
 Number: 12
-Why (at most 40 words):
+Why (at most 40 words): The leaderboard prefers X (74 vs 70), because it has more correct answers, "I don't know" gets zero. That teaches models to always guess instead of admitting not knowing, which makes confident wrong answers (model hallucinations).
+
 
 ### Q5
 

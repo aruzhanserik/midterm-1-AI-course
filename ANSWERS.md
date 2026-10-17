@@ -86,25 +86,27 @@ A vendor saying "we are safe" is not a compliance check.
 
 ### Q1
 
-Number:
-Why (at most 40 words):
+Number: 1.58
+Why (at most 40 words): Bytes grow 2.12x but tokens 3.36x. Encoding explains only part of the Kazakh premium, the tokenizer adds a further 1.58x by splitting Kazakh into many more pieces, which makes the token ratio higher.
+
 
 ### Q2
 
-Number:
-Why (at most 40 words):
+Number: 503
+Why (at most 40 words): A 576-token chunk is about 592 e5 tokens, but e5 reads only 512(limit). The sentence starts at 503, so almost all is cut. The question likely cannot retrieve this chunk, and no error appears because truncation is silent.
+
 
 ### Q3
 
-Number:
-Why (at most 40 words):
+Number: 92.7
+Why (at most 40 words): 
 
 ### Q4
 
-Number:
+Number: 12
 Why (at most 40 words):
 
 ### Q5
 
-Number:
+Number: 9945
 Why (at most 40 words):
